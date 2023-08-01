@@ -1,13 +1,48 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+:root {
+  --primary-blue: #00d8ff;
+  --primary-purple: #6a00ff
+}
+.box {
+  width: 200px;
+  height: 200px;
+  background: red;
+}
+.example-container div {
+  background: #6a00ff;
+  border-radius: 30px;
+  width: 150px;
+  height: 150px;
+}
+.progress-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 8px;
+  background: #6a00ff;
+  transform-origin: 0%;
+}
+#root > div > div.w-full.h-\[90px\] > div > nav {
+  opacity: 1;
+}
+.Toggle {
+  background-color: red;
+}
+@layer base {
+  h1 {
+    @apply text-3xl font-bold
+  }
+  li {
+    @apply p-4
+  }
+  button {
+    @apply bg-gradient-to-r from-[var(--primary-purple)] to-[var(--primary-blue)] py-3 px-2 rounded-3xl
+  }
+  button:hover {
+    @apply cursor-pointer hover:text-2xl
+  }
 }
