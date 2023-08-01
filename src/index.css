@@ -11,12 +11,7 @@
   height: 200px;
   background: red;
 }
-.example-container div {
-  background: #6a00ff;
-  border-radius: 30px;
-  width: 150px;
-  height: 150px;
-}
+
 .progress-bar {
   position: fixed;
   top: 0;
