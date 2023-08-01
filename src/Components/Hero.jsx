@@ -1,11 +1,12 @@
 import React from 'react'
 import heroVid from './../assets/video.mp4'
+import aryaVid from './../assets/Arya.mp4'
 
 const Hero = () => {
   return (
     <div className='w-full h-[90vh] top=[90px]'>
         <video className='object-cover h-full w-full absolute -z-10'
-         src={heroVid} 
+         src={aryaVid} 
         autoPlay
         loop
         muted/>
